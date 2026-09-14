@@ -1,0 +1,23 @@
+# environment
+.env*
+.env
+
+# md
+NOTA.md
+
+# dependency
+node_modules/
+
+# build
+dist/
+
+# logs
+.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
