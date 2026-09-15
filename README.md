@@ -1,4 +1,3 @@
-```markdown
 # Cimapp 🏔️
 > Plataforma web para la exploración, registro y recomendación inteligente de cimas de montaña en España.
 
@@ -60,7 +59,6 @@ cimapp/
 │   └── SPEC_FRONTEND.md
 ├── .env                       # Variables de entorno raíz
 └── README.md                  # Documentación principal
-
 ```
 
 ### 📐 Spec-Driven Development (SDD) e Ingeniería de Contexto
@@ -82,7 +80,6 @@ Toda la aplicación ha sido diseñada siguiendo la metodología **Spec-Driven De
 ```bash
 git clone [https://github.com/FJMatiasH/Cimapp.git](https://github.com/FJMatiasH/Cimapp.git)
 cd Cimapp
-
 ```
 
 ### 2. Configurar variables de entorno
@@ -93,7 +90,6 @@ Crea un archivo `.env` en la raíz del proyecto (o dentro de `apps/backend/`):
 PORT=3000
 CORS_ORIGIN=http://localhost:5173
 GEMINI_API_KEY=tu_clave_de_api_gemini_aqui
-
 ```
 
 > **Nota**: Puedes obtener una API Key gratuita en [Google AI Studio](https://aistudio.google.com/).
@@ -106,7 +102,6 @@ GEMINI_API_KEY=tu_clave_de_api_gemini_aqui
 cd apps/backend
 npm install
 npm run dev
-
 ```
 
 *El servidor iniciará en `http://localhost:3000`.*
@@ -119,7 +114,6 @@ En una nueva terminal:
 cd apps/frontend
 npm install
 npm run dev
-
 ```
 
 *La interfaz web se abrirá en `http://localhost:5173`.*
@@ -129,7 +123,7 @@ npm run dev
 ## 📡 Resumen de la API REST
 
 | Método | Endpoint | Parámetros / Body | Descripción |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | `GET` | `/api/health` | N/A | Verifica el estado del servidor y conexión con Gemini |
 | `GET` | `/api/cimas` | Query: `search`, `dificultad`, `provincia`, `minAlt`, `maxAlt` | Obtiene el catálogo completo de cimas con filtros |
 | `GET` | `/api/cimas/:id` | Params: `id` | Obtiene los detalles completos de una cima específica |
@@ -146,7 +140,3 @@ Este proyecto está bajo la Licencia **MIT**. Consulta el archivo de licencia pa
 ---
 
 *Desarrollado para amantes de la montaña y el software libre.* 🏔️✨
-
-```
-
-```
