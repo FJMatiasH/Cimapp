@@ -42,6 +42,12 @@ export const CimaDetailModal: React.FC<CimaDetailModalProps> = ({
     ? `https://www.google.com/maps?q=${cima.coordenadas.lat},${cima.coordenadas.lng}`
     : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(cima.nombre + ' ' + cima.provincia)}`;
 
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    const target = e.currentTarget;
+    target.onerror = null;
+    target.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400"><rect width="100%" height="100%" fill="%230f172a"/><path d="M100 320 L260 130 L350 230 L460 110 L560 320 Z" fill="%231e293b"/><path d="M260 130 L295 175 L225 175 Z" fill="%2338bdf8" opacity="0.8"/><path d="M460 110 L485 145 L435 145 Z" fill="%2338bdf8" opacity="0.8"/><text x="50%" y="85%" font-family="sans-serif" font-weight="bold" font-size="18" fill="%2394a3b8" text-anchor="middle">🏔️ Cima de España</text></svg>';
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-slate-950/70 backdrop-blur-sm animate-fadeIn">
       <div className="relative w-full max-w-3xl bg-white rounded-3xl overflow-hidden shadow-2xl border border-slate-200 max-h-[90vh] flex flex-col">
@@ -61,6 +67,7 @@ export const CimaDetailModal: React.FC<CimaDetailModalProps> = ({
               src={cima.imagenes[activeImageIndex] || cima.imagenes[0]}
               alt={cima.nombre}
               className="w-full h-full object-cover"
+              onError={handleImageError}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent" />
 
@@ -96,7 +103,7 @@ export const CimaDetailModal: React.FC<CimaDetailModalProps> = ({
                     activeImageIndex === idx ? 'border-sky-400 scale-105' : 'border-transparent opacity-60 hover:opacity-100'
                   }`}
                 >
-                  <img src={img} alt={`Foto ${idx + 1}`} className="w-full h-full object-cover" />
+                  <img src={img} alt={`Foto ${idx + 1}`} className="w-full h-full object-cover" onError={handleImageError} />
                 </button>
               ))}
             </div>

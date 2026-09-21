@@ -34,6 +34,12 @@ export const CimaCard: React.FC<CimaCardProps> = ({
     }
   };
 
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    const target = e.currentTarget;
+    target.onerror = null;
+    target.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400"><rect width="100%" height="100%" fill="%230f172a"/><path d="M100 320 L260 130 L350 230 L460 110 L560 320 Z" fill="%231e293b"/><path d="M260 130 L295 175 L225 175 Z" fill="%2338bdf8" opacity="0.8"/><path d="M460 110 L485 145 L435 145 Z" fill="%2338bdf8" opacity="0.8"/><text x="50%" y="85%" font-family="sans-serif" font-weight="bold" font-size="18" fill="%2394a3b8" text-anchor="middle">🏔️ Cima de España</text></svg>';
+  };
+
   return (
     <div className="group bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
       {/* Image Container */}
@@ -42,10 +48,11 @@ export const CimaCard: React.FC<CimaCardProps> = ({
         onClick={() => onOpenDetail(cima)}
       >
         <img
-          src={cima.imagenes[0] || 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b'}
+          src={cima.imagenes[0]}
           alt={cima.nombre}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
           loading="lazy"
+          onError={handleImageError}
         />
 
         {/* Gradient shadow for text readability */}

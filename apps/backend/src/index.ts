@@ -21,6 +21,10 @@ app.use(cors({
 }));
 app.use(express.json());
 
+// Servir la carpeta de imágenes raíz de manera estática
+app.use('/assets/imagenes', express.static(path.resolve(process.cwd(), 'assets/imagenes')));
+app.use('/assets/imagenes', express.static(path.resolve(__dirname, '../../../assets/imagenes')));
+
 // Ruta base informativa
 app.get('/', (req, res) => {
   res.json({

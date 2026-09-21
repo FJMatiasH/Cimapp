@@ -9,8 +9,7 @@ export const MOCK_CIMAS: Cima[] = [
     provincia: 'Santa Cruz de Tenerife',
     sistemaMontanoso: 'Islas Canarias / Tenerife',
     imagenes: [
-      'https://images.unsplash.com/photo-1579618218290-24a26f634558?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80'
+      '/assets/imagenes/teide.jpg'
     ],
     descripcion: 'Estratovolcán y pico más alto de España y de todas las tierras emergidas del Atlántico. Su cumbre ofrece vistas irrepetibles del archipiélago canario sobre el mar de nubes. Requiere permiso administrativo previo del Parque Nacional para el sendero Telesforo Bravo hasta el cráter.',
     desnivelPositivo: 1500,
@@ -27,8 +26,7 @@ export const MOCK_CIMAS: Cima[] = [
     provincia: 'Granada',
     sistemaMontanoso: 'Sierra Nevada',
     imagenes: [
-      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80'
+      '/assets/imagenes/mulhacen.jpg'
     ],
     descripcion: 'Techo de la Península Ibérica. La ruta normal por la cara sur desde Capileira o la Hoya del Portillo no presenta dificultades técnicas en verano, pero su altitud y longitud demandan una excelente forma física. En invierno se transforma en un terreno riguroso de alta montaña invernal.',
     desnivelPositivo: 1350,
@@ -45,8 +43,7 @@ export const MOCK_CIMAS: Cima[] = [
     provincia: 'Huesca',
     sistemaMontanoso: 'Pirineos (Macizo de la Maladeta)',
     imagenes: [
-      'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=1200&q=80'
+      '/assets/imagenes/aneto.jpg'
     ],
     descripcion: 'La cumbre más elevada de la cordillera pirenaica. La ruta clásica parte del refugio de La Renclusa, atraviesa el glaciar del Aneto (obligatorio uso de crampones, piolet y casco en cualquier época) y culmina cruzando el célebre y aéreo Paso de Mahoma.',
     desnivelPositivo: 1500,
@@ -63,8 +60,7 @@ export const MOCK_CIMAS: Cima[] = [
     provincia: 'Granada',
     sistemaMontanoso: 'Sierra Nevada',
     imagenes: [
-      'https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?auto=format&fit=crop&w=1200&q=80'
+      '/assets/imagenes/veleta.jpg'
     ],
     descripcion: 'La segunda cumbre de Sierra Nevada y una de las ascensiones de más de 3.000 metros más amables de Europa durante el verano. Partiendo desde la Hoya de la Mora, se avanza por senderos o pistas cómodas, resultando ideal como cima de aclimatación o iniciación a la altitud.',
     desnivelPositivo: 870,
@@ -81,8 +77,7 @@ export const MOCK_CIMAS: Cima[] = [
     provincia: 'Huesca',
     sistemaMontanoso: 'Pirineos (Parque Nacional de Ordesa y Monte Perdido)',
     imagenes: [
-      'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=1200&q=80'
+      '/assets/imagenes/monteperdido.jpg'
     ],
     descripcion: 'Pico calcáreo más alto de Europa, emblema del cañón de Ordesa. El ascenso desde el refugio de Góriz pasa por la Ciudad de Piedra y el lago Helado, concluyendo por el temido nevero de La Escupidera, donde es imperativo extremar la precaución ante caídas.',
     desnivelPositivo: 1200,
@@ -99,8 +94,7 @@ export const MOCK_CIMAS: Cima[] = [
     provincia: 'Asturias / León',
     sistemaMontanoso: 'Picos de Europa (Macizo Central)',
     imagenes: [
-      'https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1508873696983-2df5293cb32f?auto=format&fit=crop&w=1200&q=80'
+      '/assets/imagenes/torrecerredo.jpg'
     ],
     descripcion: 'Techo absoluto de los Picos de Europa y de la Cordillera Cantábrica. Para alcanzar su cruz es necesario acometer una trepada final mantenida de grado II/II+ en roca caliza descompuesta donde no cabe el error ni el vértigo.',
     desnivelPositivo: 1400,
@@ -117,8 +111,7 @@ export const MOCK_CIMAS: Cima[] = [
     provincia: 'Asturias',
     sistemaMontanoso: 'Picos de Europa',
     imagenes: [
-      'https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1517824806704-9040b037703b?auto=format&fit=crop&w=1200&q=80'
+      '/assets/imagenes/urriellu.jpg'
     ],
     descripcion: 'El gran mito de la escalada en España. Esta colosal mole de roca caliza naranja carece de sendero pedestre a la cumbre; su vía más asequible (la cara sur) exige escalada clásica de V- grado con varios largos de cuerda y rápeles para descender.',
     desnivelPositivo: 1100,
@@ -135,8 +128,7 @@ export const MOCK_CIMAS: Cima[] = [
     provincia: 'Madrid / Segovia',
     sistemaMontanoso: 'Sierra de Guadarrama',
     imagenes: [
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=1200&q=80'
+      '/assets/imagenes/peñalara.jpg'
     ],
     descripcion: 'Cumbre máxima de la Sierra de Guadarrama y el Sistema Central entre Madrid y Segovia. La ascensión clásica parte del Puerto de Cotos por un sendero zigzagueante entre pinares y praderas alpinas hasta la cresta de Claveles y la cumbre.',
     desnivelPositivo: 600,

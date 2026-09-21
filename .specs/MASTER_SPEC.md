@@ -67,12 +67,20 @@ export interface Cima {
   dificultad: DificultadCima;       // Nivel técnico estandarizado
   provincia: string;               // Provincia o región (ej: 'Granada', 'Huesca', 'Tenerife')
   sistemaMontanoso: string;        // Cordillera o macizo (ej: 'Sierra Nevada', 'Pirineos', 'Picos de Europa')
-  imagenes: string[];              // URLs de fotos de alta resolución de la cima y ruta
+  imagenes: string[];              // Rutas relativas a assets locales servidos por el backend (ej: ['/assets/imagenes/mulhacen.jpg'])
   descripcion: string;             // Resumen descriptivo, características y entorno
   desnivelPositivo?: number;       // Desnivel aproximado de la ascensión en metros (opcional)
   coordenadas?: Coordenadas;       // Coordenadas geográficas (latitud, longitud)
 }
 ```
+
+> [!NOTE]
+> **Configuración de Archivos Estáticos en Express Backend**:
+> La carpeta `/assets/imagenes/` se sirve de forma estática en Express backend mediante el middleware `express.static`:
+> ```typescript
+> app.use('/assets/imagenes', express.static(path.join(__dirname, '../../../assets/imagenes')));
+> ```
+> El cliente frontend accede transparentemente a estos recursos mediante peticiones a `/assets/imagenes/<nombre-cima>.jpg` con el soporte del proxy de Vite en desarrollo.
 
 ### 2.2. Entidad Listas de Usuario (`UserLists`)
 Almacena el estado personal de cimas del montañero.

@@ -46,7 +46,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAdvisor, totalCimas }) => {
           </div>
           <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-2.5 border border-slate-800">
             <div className="text-xl font-bold text-emerald-400 font-mono">3.718 m</div>
-            <div className="text-[11px] text-slate-400 mt-0.5">Techo (Teide)</div>
+            <div className="text-[11px] text-slate-400 mt-0.5">Más alta (Teide)</div>
           </div>
           <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-2.5 border border-slate-800">
             <div className="text-xl font-bold text-amber-400 font-mono">4 Niveles</div>

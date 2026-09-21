@@ -15,7 +15,7 @@
      * Nombre oficial y alternativo de la cumbre.
      * Altitud en metros sobre el nivel del mar (m s. n. m.).
      * Nivel de dificultad técnica estandarizado (Fácil, Moderada, Difícil, Muy Difícil / Alta Montaña).
-     * Galería de fotos de alta resolución.
+     * Galería de fotos de alta resolución utilizando recursos estáticos alojados localmente en la carpeta `/assets/imagenes/` del monorepo.
      * Descripción geográfica, características de ascensión y entorno natural.
      * Ubicación geográfica precisa (Provincia, Sistema Montañoso / Macizo y Coordenadas).
    - Sistema de filtrado y búsqueda avanzada en cliente por nombre, provincia, rango de altitud y dificultad.
@@ -45,6 +45,8 @@ cimapp/
 ├── apps/
 │   ├── backend/       # API RESTful en Express + TypeScript + Gemini SDK
 │   └── frontend/      # SPA React + Tailwind CSS + TypeScript
+├── assets/
+│   └── imagenes/      # Repositorio de recursos estáticos de fotografías de cimas
 ├── .specs/            # Especificaciones funcionales y técnicas (SDD)
 ├── .env               # Variables de entorno raíz (ej. GEMINI_API_KEY, PORT)
 ├── package.json       # Configuración de workspaces del monorepo
